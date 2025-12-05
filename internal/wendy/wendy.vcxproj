@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\GlobalKeyListener\GlobalKeyListener.cpp" />
+    <ClCompile Include="..\..\code\Hook\HookMgr.cpp" />
+    <ClCompile Include="..\..\code\Hook\src\buffer.c" />
+    <ClCompile Include="..\..\code\Hook\src\hde\hde32.c" />
+    <ClCompile Include="..\..\code\Hook\src\hde\hde64.c" />
+    <ClCompile Include="..\..\code\Hook\src\hook.c" />
+    <ClCompile Include="..\..\code\Hook\src\trampoline.c" />
+    <ClCompile Include="..\..\code\IDVGame.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\code\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="..\..\code\jsoncpp\json_reader.cpp" />
+    <ClCompile Include="..\..\code\jsoncpp\json_value.cpp" />
+    <ClCompile Include="..\..\code\jsoncpp\json_writer.cpp" />
+    <ClCompile Include="..\..\code\Logger\Logger.cpp" />
+    <ClCompile Include="..\..\code\main.cpp" />
+    <ClCompile Include="..\..\code\Memory\mem.cpp" />
+    <ClCompile Include="..\..\code\Render\d3d11helper.cpp" />
+    <ClCompile Include="..\..\code\Render\Render.cpp" />
+    <ClCompile Include="..\..\code\Utils\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\GlobalKeyListener\GlobalKeyListener.h" />
+    <ClInclude Include="..\..\code\Hook\HookMgr.h" />
+    <ClInclude Include="..\..\code\Hook\src\buffer.h" />
+    <ClInclude Include="..\..\code\Hook\src\hde\hde32.h" />
+    <ClInclude Include="..\..\code\Hook\src\hde\hde64.h" />
+    <ClInclude Include="..\..\code\Hook\src\hde\pstdint.h" />
+    <ClInclude Include="..\..\code\Hook\src\hde\table32.h" />
+    <ClInclude Include="..\..\code\Hook\src\hde\table64.h" />
+    <ClInclude Include="..\..\code\Hook\src\trampoline.h" />
+    <ClInclude Include="..\..\code\IDVGame.h" />
+    <ClInclude Include="..\..\code\ImGui\imconfig.h" />
+    <ClInclude Include="..\..\code\ImGui\imgui.h" />
+    <ClInclude Include="..\..\code\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\..\code\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\code\ImGui\imgui_internal.h" />
+    <ClInclude Include="..\..\code\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\code\ImGui\imstb_textedit.h" />
+    <ClInclude Include="..\..\code\ImGui\imstb_truetype.h" />
+    <ClInclude Include="..\..\code\jsoncpp\allocator.h" />
+    <ClInclude Include="..\..\code\jsoncpp\assertions.h" />
+    <ClInclude Include="..\..\code\jsoncpp\config.h" />
+    <ClInclude Include="..\..\code\jsoncpp\forwards.h" />
+    <ClInclude Include="..\..\code\jsoncpp\json.h" />
+    <ClInclude Include="..\..\code\jsoncpp\json_features.h" />
+    <ClInclude Include="..\..\code\jsoncpp\json_tool.h" />
+    <ClInclude Include="..\..\code\jsoncpp\reader.h" />
+    <ClInclude Include="..\..\code\jsoncpp\value.h" />
+    <ClInclude Include="..\..\code\jsoncpp\version.h" />
+    <ClInclude Include="..\..\code\jsoncpp\writer.h" />
+    <ClInclude Include="..\..\code\Logger\Logger.h" />
+    <ClInclude Include="..\..\code\Memory\mem.h" />
+    <ClInclude Include="..\..\code\Render\d3d11helper.h" />
+    <ClInclude Include="..\..\code\Render\Render.h" />
+    <ClInclude Include="..\..\code\types.h" />
+    <ClInclude Include="..\..\code\Utils\Utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\jsoncpp\json_valueiterator.inl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{70aa609f-4b48-4c35-8960-4b1dfa1b057e}</ProjectGuid>
+    <RootNamespace>wendy</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>wendy</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;wendy_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;wendy_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;wendy_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>libMinHook.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;wendy_EXPORTS;_WINDOWS;_USRDLL;Py_NO_WIN32_EXTENSIONS=1;Py_BUILD_CORE;MemoryLib=MemoryInternal;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(ProjectDir)\python_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>version.lib;bcrypt.lib;ws2_32.lib;pathcch.lib;advapi32.lib;shell32.lib;d3d11.lib;dxgi.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

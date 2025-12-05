@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{20262a89-6a81-4612-8453-29d8e5c5c696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook">
+      <UniqueIdentifier>{2d80f969-b7b3-4a42-8c51-74fe94a0bddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook\src">
+      <UniqueIdentifier>{58121639-2651-468f-b240-2a4bcc42d034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook\include">
+      <UniqueIdentifier>{2da75bcf-ddc5-425a-a010-d04f5e075880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hook\src\hde">
+      <UniqueIdentifier>{5cfa4584-25f4-4fb1-8622-f4e5cb7a6c52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logger">
+      <UniqueIdentifier>{c70e5af7-efcf-4dfb-9e87-0e3b78e14887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{523a51e4-ad95-435c-af5b-429e882a7700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{610d0100-ac46-43fe-b4cb-e8c7b49f9e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="jsoncpp">
+      <UniqueIdentifier>{bd4858f5-2393-4d08-b049-3300eb48abc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GlobalKeyListener">
+      <UniqueIdentifier>{bc5bb78d-8cdf-4f27-bc0f-1554f7b5292e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{b72ce231-6c1b-41c2-9c39-da7e824a6618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{b47d0cab-8d35-48ac-83a2-82ea1387f757}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\GlobalKeyListener\GlobalKeyListener.cpp">
+      <Filter>GlobalKeyListener</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Hook\HookMgr.cpp">
+      <Filter>Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Hook\src\buffer.c">
+      <Filter>Hook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Hook\src\hook.c">
+      <Filter>Hook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Hook\src\trampoline.c">
+      <Filter>Hook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Hook\src\hde\hde32.c">
+      <Filter>Hook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Hook\src\hde\hde64.c">
+      <Filter>Hook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\ImGui\imgui_demo.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\jsoncpp\json_reader.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\jsoncpp\json_value.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\jsoncpp\json_writer.cpp">
+      <Filter>jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Logger\Logger.cpp">
+      <Filter>Logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\IDVGame.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Memory\mem.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Render\d3d11helper.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Render\Render.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\GlobalKeyListener\GlobalKeyListener.h">
+      <Filter>GlobalKeyListener</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\HookMgr.h">
+      <Filter>Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\buffer.h">
+      <Filter>Hook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\trampoline.h">
+      <Filter>Hook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\hde\hde32.h">
+      <Filter>Hook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\hde\hde64.h">
+      <Filter>Hook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\hde\pstdint.h">
+      <Filter>Hook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\hde\table32.h">
+      <Filter>Hook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Hook\src\hde\table64.h">
+      <Filter>Hook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\json_features.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\json_tool.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\reader.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\value.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\version.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\writer.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\allocator.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\assertions.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\config.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\forwards.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\jsoncpp\json.h">
+      <Filter>jsoncpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Logger\Logger.h">
+      <Filter>Logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\IDVGame.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Memory\mem.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Render\Render.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Render\d3d11helper.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\types.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\jsoncpp\json_valueiterator.inl">
+      <Filter>jsoncpp</Filter>
+    </None>
+  </ItemGroup>
+</Project>
